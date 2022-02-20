@@ -32,17 +32,24 @@ fun minimumOf(number1: Long, number2: Long){
         }
 }
 
-fun rangeOf(number: Int){
+fun rangeOf(number: Int) {
     //TODO This function takes in a number and prints out the range that the number falls in.
     // The ranges are: (0 or below) (1 to 5), (6 to 10), (11 to 20), (21+)
     // For example, if the number was 7, print out a message saying that the number 7 falls into the range 6 to 10.
 
-    if(number in 1..5) {
-        println("Number 7 falls between 6 and 10")
+    if (number in 1..5) {
+        println("Number  1 falls between 1 and 5")
     }
 
-    
+    if (number in 6..10)
+        println("Number 6 falls between 6 and 10")
+
+    if (number in 11..20)
+        println("Number 11 falls between 6 and 10")
 }
+
+    
+
 
 fun inferredTypeOf(variable: Any){
     //TODO This function examines the inferred type of the variable passed as a parameter.
